@@ -40,5 +40,12 @@ const goods=[
         favorRate: 99,
         price: 65
     },
-
+    {
+        title: '大蛋捲冰淇淋',
+        pic: './assets/ice-cream-cone-large.jpg',
+        desc: `麥當勞經典冰品 – 蛋捲冰淇淋， 綿密滑順的口感，加上濃郁奶香， 搭配酥脆餅乾杯，就是簡單又經典的完美組合。 每嚐一口，就會想起初次品嚐的開心！ 現在還有大蛋捲冰淇淋，份量更多、享受加倍！`,
+        sellNumber: 50,
+        favorRate: 93,
+        price: 20
+    }
 ];
