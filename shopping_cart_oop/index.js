@@ -317,7 +317,6 @@ const uig=new UiGoods(goods[0]);
 console.log({uig});
  */
 
-
 /* [一般函數] 返回一個對象 (創建對象可使用構造函數)
 function createUiGoods(g){
     return {
@@ -328,3 +327,128 @@ function createUiGoods(g){
 console.log(createUiGoods(goods[0]))
 */
 
+
+/* ==================== [屬性描述符] ==================== */
+/* [屬性描述符] 更細緻的控制屬性
+class UiGoodsTest{
+    constructor(g){
+        Object.defineProperty(this, "data", {
+            value: g,
+            writable: false,
+            enumerable: true,
+            configurable: false,
+        });
+    }
+};
+
+const uig=new UiGoods(goods);
+uig.data="test";
+console.log({uig});
+
+const uigTest=new UiGoodsTest(goods);
+uigTest.data="test"; // [報錯] 不符規則, 應該報錯
+console.log({uigTest});
+
+const obj={};
+*/
+
+/* [訪問器]
+let internalValue=undefined;
+Object.defineProperty(obj, 'a', {
+    // [讀取器] getter
+    get: function(){
+        console.log("getter");
+        return internalValue;
+    },
+    // [設置器] setter
+    set: function(value){
+        console.log("setter");
+        internalValue=value;
+    },
+});
+
+// obj.a=3+2; // set(3+2);
+// console.log(obj.a); // console.log(get());
+
+// obj.a=obj.a+2; // set(get()+2);
+// obj.a=123;
+// console.log(obj.a);
+*/
+
+/* [只讀屬性]
+Object.defineProperty(obj, 'b', {
+    // [讀取器] getter
+    get: function(){
+        return "read only";
+    },
+    // [設置器] setter
+    set: function(value){
+        throw new Error("cant set read only value");
+    },
+});
+obj.b="test";
+*/
+
+class UiGoodsTest_1{
+    constructor(g){
+        g={...g};
+        Object.freeze(g);
+        Object.defineProperty(this, "data", {
+            get: function(){
+                return g;
+            },
+            set: function(){
+                throw new Error("data cant set, data is read only.");
+            }
+        });
+        let internalChoose=0;
+        Object.defineProperty(this, "choose", {
+            configurable: false,
+            get: function(){
+                return internalChoose;
+            },
+            set: function(value){
+                if (typeof value!=="number") {
+                    throw new Error("choose type should be number.")
+                }
+                let temp=parseInt(value); // ~~value, ex. 1 / 1.5
+                if (temp!==value) {
+                    throw new Error("choose should be integer.")
+                }
+                if (value<0) {
+                    throw new Error("choose should be > 0.")
+                }
+                internalChoose=value;
+            }
+        });
+        // Object.defineProperty(this, "totalPrice", {
+        //     get: function(){
+        //         return this.choose*this.data.price;
+        //     }
+        // });
+        this.test="a";
+        // Object.freeze(this);
+        Object.seal(this);
+    }
+
+    // [ES6語法糖]
+    get totalPrice(){
+        return this.choose*this.data.price;
+    }
+    get isChoose(){
+        return this.choose>0;
+    }
+
+}
+const uiGoodsTest_1=new UiGoodsTest_1(goods[0]);
+// uiGoodsTest_1.data="test";
+// uiGoodsTest_1.choose="test";
+// uiGoodsTest_1.choose=0.5;
+// uiGoodsTest_1.choose=-1;
+uiGoodsTest_1.choose=2;
+// console.log(uiGoodsTest_1.totalPrice);
+uiGoodsTest_1.data.price="test";
+uiGoodsTest_1.data.abc="test";
+Object.freeze(UiGoodsTest_1.prototype);
+UiGoodsTest_1.prototype.testAdd="g";
+console.log({uiGoodsTest_1});
