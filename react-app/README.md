@@ -1,8 +1,27 @@
-# React + Vite
+# Vite & React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 專案環境建置
+1. git clone 專案
+``` bash
+git clone https://github.com/henry5720/practice.git
+```
+2. 移至該專案路徑
+``` bash
+cd ./practice/react-app
+```
+3. install node.js 前往 [Node.js 官方網站](https://nodejs.org/en) 下載 Node.js 的安裝包
+``` bash
+node -v
+```
+4. install yarn 這個命令會全局安裝 Yarn
+``` bash
+npm install -g yarn
+```
+5. yarn 還原依賴
+``` bash
+yarn install
+```
+6. 執行dev模式
+``` bash
+yarn dev
+```
