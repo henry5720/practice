@@ -22,7 +22,7 @@ li{
 .banner{
   height: 500px;
   background-color: brown;
-  background-image: url("./assets/banner.jpg");
+  background-image: url("/assets/banner.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

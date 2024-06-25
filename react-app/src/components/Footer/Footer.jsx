@@ -1,19 +1,19 @@
 const Footer=()=>{
     const footerList=[
         {
-            icon: "./src/assets/icon/home.png",
+            icon: "./assets/icon/home.png",
             text: "首頁"
         },
         {
-            icon: "./src/assets/icon/video.png",
+            icon: "./assets/icon/video.png",
             text: "影片"
         },
         {
-            icon: "./src/assets/icon/mouse.png",
+            icon: "./assets/icon/mouse.png",
             text: "角色"
         },
         {
-            icon: "./src/assets/icon/person.png",
+            icon: "./assets/icon/person.png",
             text: "我的"
         },
     ];

@@ -20,7 +20,7 @@
     border: 0;
     width: 30px;
     height: 30px;
-    background-image: url("../../assets/icon/search.png");
+    background-image: url("/assets/icon/search.png");
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
