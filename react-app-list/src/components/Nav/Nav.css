@@ -1,0 +1,28 @@
+.Nav{
+    padding: 0 10px;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(80, 13, 175, 0.6);
+
+}
+.Nav h1{
+    font-size: 30px;
+    color: white;
+
+}
+
+.Nav button{
+    border: 0;
+    width: 30px;
+    height: 30px;
+    background-image: url("/assets/icon/search.png");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
