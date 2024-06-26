@@ -74,9 +74,7 @@ const camera=new THREE.OrthographicCamera(
     200
 )
 */
-camera.position.x=5;
-camera.position.y=5;
-camera.position.z=5;
+camera.position.set(6, 6, 6);
 // console.log("mesh distanceTo camera" ,cubeMesh.position.distanceTo(camera.position));
 // scene.add(camera);
 const canvas=document.querySelector("canvas.threejs");

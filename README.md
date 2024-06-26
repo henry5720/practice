@@ -1,8 +1,10 @@
 # Practice
 
-|  #  | Project                                                                                                                     | Live Demo                                                                         |
-| :-: | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| 01  | [shopping_cart](https://github.com/henry5720/practice/tree/main/shopping_cart_oop)                             | [Live Demo](https://henry5720.github.io/practice/shopping_cart_oop/index.html)
-| 02  | [react-app](https://github.com/henry5720/practice/tree/main/react-app)                             | [Live Demo](https://henry5720.github.io/practice/react-app/index.html)
-|
-
+| # | Project | Live Demo |
+| :-: | ----- | ----- |
+| 01 | [shopping-cart-oop](./shopping-cart-oop/) | [Live Demo]()
+| 02 | [list-app-react](./list-app-react/) | [Live Demo]()
+| 03 | [three-js-basic](./three-js-basic/) | [Live Demo]()
+| 04 | [chat-room](./chat-room/) | [Live Demo](./chat-room/)
+| 05 | [docker-test](./docker-test/) | [Live Demo](./docker-test/)
+| 06 | [winform-calendar](./winform-calendar/) | [Live Demo](./winform-calendar/)
