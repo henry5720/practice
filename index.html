@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>practice</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        html, body{
+            height: 100%;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            background: #ccc;
+        }
+
+        .container li {
+            margin: 20px;
+            width: 15vw;
+            height: 20vw;
+            box-shadow: 6px 3.3px 12px rgba(0, 0, 0, 0.024),
+                20.1px 11.2px 40.2px rgba(0, 0, 0, 0.036),
+                90px 50px 180px rgba(0, 0, 0, 0.06);
+        }
+
+
+        .container a {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+            font-size: 16px;
+            /* color: #ccc; */
+            transform: translateY(50%);
+        }
+
+        .container button {
+            padding: 2px 15px;
+            border: 0;
+            font-size: 12px;
+            cursor: pointer;
+            color: #ccc;
+            background-color: #333;
+            opacity: 0;
+        }
+
+        .container li:hover a {
+            transition: 0.5s;
+            transform: translateY(0%);
+            background-color: peru;
+        }
+
+        .container li:hover button {
+            opacity: 100;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="container">
+        <li>
+            <a href="./list-app-react/">
+                list-app-react
+                <button>view</button>
+            </a>
+        </li>
+        <li>
+            <a href="./shopping-cart-oop/">
+                shopping-cart-oop
+                <button>view</button>
+            </a>
+        </li>
+        <li>
+            <a href="./three-js-basic/">
+                three-js-basic
+                <button>view</button>
+            </a>
+        </li>
+    </ul>
+</body>
+
+</html>
