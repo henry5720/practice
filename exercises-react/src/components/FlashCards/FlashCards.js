@@ -44,7 +44,11 @@ const FlashCards = () => {
     return (
         <>
             <Link to="/" className="myLink m-10">
-                <div className="homeBtn"></div>
+                <div style={{
+                    height: "100%",
+                    backgroundImage: `url(${process.env.PUBLIC_URL}/imgs/icons8-home-60.png)`,
+                    backgroundSize: 'contain',
+                }}></div>
             </Link>
             <div className="flashcards">
                 {

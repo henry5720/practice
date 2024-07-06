@@ -1,4 +1,20 @@
-# Getting Started with Create React App
+# exercises react (react-router)
+## home
+![](./doc/home.png)
+## step
+![](./doc/step.png)
+## counter
+![](./doc/counter.png)
+## travel
+![](./doc/travel.png)
+## flashCards
+![](./doc/flashCards.png)
+## range
+![](./doc/range.png)
+## tip
+![](./doc/tip.png)
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

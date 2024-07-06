@@ -21,7 +21,3 @@
 .myLink:hover{
     background-color: yellowgreen;
 }
-.homeBtn{
-    height: 100%;
-    background: url("/public/imgs/icons8-home-60.png") center/contain no-repeat;
-}
