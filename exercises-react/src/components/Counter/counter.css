@@ -1,0 +1,13 @@
+.middle{
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+    font-size: 30px;
+    background-color: cadetblue;
+}
+.middle button{
+    width: 30px;
+    margin: 0 10px;
+    font-size: 20px;
+
+}

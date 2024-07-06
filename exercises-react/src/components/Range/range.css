@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 30vh;
+    background-color: wheat;
+}
+.rangeBox{
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+    /* background-color: darkgoldenrod; */
+}
+.rangeBox i{
+    color: #333;
+    font-style: normal;
+    font-size: 30px;
+}
+.counterBox input{
+    margin: 5px;
+    padding: 5px;
+    height: 30px;
+}
+.stepBtn{
+    width: 30px;
+    height: 30px;
+}

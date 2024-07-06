@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.m-10{
+    margin: 10px;
+}
+.ml-10{
+    margin-left: 10px;
+}
+.myLink{
+    padding: 5px;
+    border: 0;
+    border-radius: 30px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-color: #7950f2;
+}
+.myLink:hover{
+    background-color: yellowgreen;
+}
+.homeBtn{
+    height: 100%;
+    background: url("/public/imgs/icons8-home-60.png") center/contain no-repeat;
+}
