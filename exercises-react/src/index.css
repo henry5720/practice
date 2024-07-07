@@ -21,3 +21,18 @@
 .myLink:hover{
     background-color: yellowgreen;
 }
+.light{
+    height: 100%;
+    background-image: url(/imgs/icons8-light-60.png);
+    background-size: contain;
+}
+.close{
+    height: 100%;
+    background-image: url(/imgs/icons8-no-idea-60.png);
+    background-size: contain;
+}
+.homeBtn{
+    height: 100%;
+    background-image: url(/imgs/icons8-home-60.png);
+    background-size: contain;
+}

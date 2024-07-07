@@ -19,27 +19,10 @@ const Step = () => {
     <>
       <div className="homeBox">
         <button className="myLink m-10" onClick={()=>setIsOpen(!isOpen)}>
-          <div style={
-            isOpen
-            ?{
-                height: "100%",
-                backgroundImage: `url(${process.env.PUBLIC_URL}/imgs/icons8-no-idea-60.png)`,
-                backgroundSize: 'contain',
-            }
-            :{
-              height: "100%",
-              backgroundImage: `url(${process.env.PUBLIC_URL}/imgs/icons8-light-60.png)`,
-              backgroundSize: 'contain',
-            }
-          }></div>
+          <div className={isOpen?"light":"close"}></div>
         </button>
         <Link to="/" className="myLink m-10">
-          <div style={{
-              height: "100%",
-              backgroundImage: `url(${process.env.PUBLIC_URL}/imgs/icons8-home-60.png)`,
-              backgroundSize: 'contain',
-          }}>
-          </div>
+          <div className="homeBtn"></div>
         </Link>
       </div>
 
