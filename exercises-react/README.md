@@ -1,4 +1,20 @@
-# React + Vite
+# exercises react (react-router)
+## home
+![](./doc/home.png)
+## step
+![](./doc/step.png)
+## counter
+![](./doc/counter.png)
+## travel
+![](./doc/travel.png)
+## flashCards
+![](./doc/flashCards.png)
+## range
+![](./doc/range.png)
+## tip
+![](./doc/tip.png)
+
+## React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
